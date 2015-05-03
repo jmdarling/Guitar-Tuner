@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, a {
+	color: #333333;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #4473FF;
+}
+
+.header {
+	text-align: center;
+}
+
+.title {
+	font-family: 'Lobster Two', cursive;
+	font-size: 5em;
+}
+
+.title span:nth-child(odd) {
+	color: #EEEEEE;
+}
+
+.title span:nth-child(even) {
+	color: #FF2C61;
+}
+
+.tuner-style-control {
+	margin: 0 33%;
+	width: 33%;
+	background-color: #EEEEEE;
+	border-radius: 15px;
+}
+
+.tuner-style-control > div {
+	display: inline-block;
+
+	text-align: center;
+}
+
+.tuner-style-control div:nth-child(1) {
+	border-right: 1px solid #333333;
+	width: 50%;
+}
+
+.tuner-style-control div:nth-child(2) {
+	border-left: 1px solid #333333;
+	width: 49%;
+}
+
+.container {
+	margin: 0 33%;
+	width: 33%;
+
+	background-color: #EEEEEE;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.string-names {
+	text-align: center;
+}
+
+.string-names > h1 {
+	display: inline-block;
+	width: 15%;
+
+	-webkit-transition: color .5s;
+	transition: color .5s;
+}
+
+.string-names > h1:hover {
+	color: #FF2C61;
+	cursor: pointer;
+}
+
+.string-names > h1.active {
+	color: #FF2C61;
+}
+
+.pause {
+	-webkit-transition: color .5s;
+	transition: color .5s;
+}
+
+.pause:hover {
+	color: #FF2C61;
+	cursor: pointer;
+}
