@@ -34,7 +34,7 @@ function stringNameClicked(event) {
 
 	// Reset the oscillator with the new frequency.
 	if (currentOscillator != undefined) {
-		currentOscillator.stop();
+		currentOscillator.stop(0);
 	}
 
 	currentOscillator = audioContext.createOscillator();
@@ -50,7 +50,7 @@ function stringNameClicked(event) {
 
 function pauseClicked() {
 	if (currentOscillator != undefined) {
-		currentOscillator.stop();
+		currentOscillator.stop(0);
 		currentOscillator = null;
 	}
 
